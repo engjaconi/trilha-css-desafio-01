@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de Borda</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            width: 80%;
+            flex-wrap: wrap;
+            background-color: lightgray;
+        }
+
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: lightseagreen;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            border-width: 10px;
+            text-align: center;
+            padding-top: 30px;
+            margin: 10px;
+        }
+
+        #none {
+            border-style: none;
+        }
+
+        #dashed {
+            border-style: dashed;
+        }
+
+        #dotted {
+            border-style: dotted;
+        }
+
+        #double {
+            border-style: double;
+        }
+
+        #groove {
+            border-style: groove;
+        }
+
+        #ridge {
+            border-style: ridge;
+        }
+
+        #inset {
+            border-style: inset;
+        }
+
+        #outset {
+            border-style: outset;
+        }
+    </style>
+</head>
+<body>
+    <div id="none">none (padrão)</div>
+    <div id="dashed">dashed</div>
+    <div id="dotted">dotted</div>
+    <div id="double">double</div>
+    <div id="groove">groove</div>
+    <div id="ridge">ridge</div>
+    <div id="inset">inset</div>
+    <div id="outset">outset</div>
+</body>
+</html>

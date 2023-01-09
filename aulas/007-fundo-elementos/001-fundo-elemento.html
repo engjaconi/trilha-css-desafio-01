@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo</title>
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+        }
+        div#div1 {
+            background-image: url(../006-imagens/cup-of-coffee.jpg);
+        }
+        div#div2 {
+            background-image: linear-gradient(90deg, rgb(28, 184, 28), rgb(62, 184, 224));
+        }
+
+        div#div3 {
+            background-image: radial-gradient(rgb(28, 184, 28), rgb(62, 184, 224));
+        }
+
+        div#div4 {
+            background-image: repeating-linear-gradient(rgb(111, 30, 216) 0%,rgb(111, 30, 216) 10%, rgb(62, 184, 224) 10%,rgb(62, 184, 224) 20%);
+        }
+
+        div#div5 {
+            background-image: url(./css.png), url(../006-imagens/cup-of-coffee.jpg);
+            /* Passando propriedades para ambas as imagens, individualmente */
+            background-size: contain, cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background</h1>
+    <h2><code>background-image: url(path)</code></h2>
+    <div id="div1"></div>
+
+    <h2>background-image: linear-gradient(dir, color1,color2)</h2>
+    <div id="div2"></div>
+
+    <h2>background-image: radial-gradient(color1,color2)</h2>
+    <div id="div3"></div>
+
+    <h2>background-image: repeating-linear-gradient(color1 0%, color1 10%,color2 10%, color2 20%)</h2>
+    <div id="div4"></div>
+
+    <h2><code>background-image: url(path),url(path)</code></h2>
+    <p>Sobreposição de background</p>
+    <div id="div5"></div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap');
+
+        @font-face {
+            font-family: Monoton;
+            src: url(./Monoton-Regular.ttf);
+            font-weight: normal; 
+            font-style: normal;
+            /* 
+                Podemos importar varios estilos e alterar somente o font-weight, mantendo o mesmo nome da fonte. Ao usa-la e definir o font-weight no elemento ele usará o arquivo correto.   
+            */
+        }
+
+        body {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {
+            font-family: 'Newsreader', serif
+        }
+
+        p {
+            font-family: 'Kalam', cursive;
+        }
+
+        div {
+            font-family: Monoton, fantasy;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes</h1>
+
+    <h2>Fonte do Google</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint repellendus eligendi. Molestias provident, error quae consequatur natus, temporibus veniam commodi nulla voluptas exercitationem ipsam est pariatur? Obcaecati, ut accusamus!</p>
+
+    <h2>Estilos de fonte</h2>
+    <p style="font-family: monospace;">Monospace - Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptate eos vel nobis quam repudiandae molestias laudantium, asperiores ad fuga accusantium recusandae tempora saepe excepturi illum ab nam inventore? Pariatur.</p>
+
+    <p style="font-family: cursive;">cursive - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil ratione veritatis fuga, explicabo eveniet illum dolorum, consequuntur facilis corrupti aliquam amet sed necessitatibus fugiat unde architecto perferendis sunt earum.</p>
+
+    <p style="font-family: fantasy;">display - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil ratione veritatis fuga, explicabo eveniet illum dolorum, consequuntur facilis corrupti aliquam amet sed necessitatibus fugiat unde architecto perferendis sunt earum.</p>
+
+    <p style="font-family: serif;">serif - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil ratione veritatis fuga, explicabo eveniet illum dolorum, consequuntur facilis corrupti aliquam amet sed necessitatibus fugiat unde architecto perferendis sunt earum.</p>
+
+    <p style="font-family: sans-serif;">sans-serif - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil ratione veritatis fuga, explicabo eveniet illum dolorum, consequuntur facilis corrupti aliquam amet sed necessitatibus fugiat unde architecto perferendis sunt earum.</p>
+
+    <div>
+        Fonte Customizada
+    </div>
+</body>
+</html>

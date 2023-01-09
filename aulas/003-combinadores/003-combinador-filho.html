@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Filho</title>
+    <style>
+        div > p {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinador Filho</h1>
+    <p>O terceiro paragrafo não é filho direto (está dentro de um span) da div que os contém, logo o estilo não é aplicado.</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iusto veritatis repellendus at praesentium atque consequatur error expedita nulla fugit nobis reprehenderit natus aliquam, excepturi enim. Ipsa aperiam quos facilis.</p>
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt corporis odio veritatis corrupti voluptatum iure illo, accusamus earum doloremque maxime quibusdam omnis consequatur veniam reprehenderit numquam. Optio nostrum repellat voluptas!
+        </span>
+    </div>
+</body>
+</html>

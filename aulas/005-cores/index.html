@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+    <style>
+        #definida {
+            color: red;
+            background-color: lightblue;
+        }
+
+        #rgb {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 255);
+        }
+
+        #rgba {
+            color: rgba(255 , 255, 255, .9);
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+
+        #hex {
+            color: #FFFF0A;
+            background-color: #005555;
+        }
+
+        #hsl {
+            color: hsl(100, 100%, 50%);
+            background-color: hsl(240, 100%, 50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Cores</h1>
+    <h2>Pré Definidas</h2>
+    <p>Cores em inglês, não recomendado, pois pode variar de navegador para navegador.</p>
+    <code id="definida">color: red</code>
+
+    <h2>RGB</h2>
+    <p>Valores de 0-255, primeiro valor vermelho, segundo azul e terceiro verde.</p>
+    <code id="rgb">color: rgba(0, 0, 0)</code>
+
+    <h2>RGBA</h2>
+    <p>Valores de 0-255, primeiro valor vermelho, segundo azul e terceiro verde. Quarto valor é o canal alpha, transparência de 0-1.</p>
+    <code id="rgba">color: rgba(0, 0, 0)</code>
+
+    <h2>HEXADECIMAL</h2>
+    <p>Valores de 0-F. Adicionando mais dois valores ao final será o canal alpha.</p>
+    <code id="hex">color: #FFFF0A</code>
+
+    <h2>HSL</h2>
+    <p>Primeiro valor de 0-360. Verde de 0-120, Azul de 121-240 e Vermelho 241-360. Segundo é a saturação de 0-100%. Terceiro valor é a luminosidade.</p>
+    <p>HSLA, seria para passar o canal alpha.</p>
+    <code id="hsl">color: hsl(120, 100%, 50%)</code>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Descendente</title>
+    <style>
+        ol li {
+            color: darkviolet;
+        }
+
+        ol li#lista1 {
+            background-color: lightblue;
+        }
+
+        ol li .itens {
+            font-size: 1.2rem;
+        }
+
+        body  ol  li#lista3  li {
+            color: black;
+        }
+
+        ol li#lista3 {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinador Descendente</h1>
+    <p>Buscamos o todos os elementos, não precisamos especificar o caminho completo até ele.</p>
+    <ol>
+        <li id="lista1">
+            <div>Lista 1</div>
+            <ul class="itens">
+                <li>item 1.1</li>
+                <li>item 1.2</li>
+            </ul>
+        </li>
+        <li id="lista2">
+            <div>Lista 2</div>
+            <ul class="itens">
+                <li>item 2.1</li>
+                <li>item 2.2</li>
+            </ul>
+        </li>
+        <li id="lista3">
+            <div>Lista 3</div>
+            <ul class="itens">
+                <li>item 3.1</li>
+                <li>item 3.2</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>

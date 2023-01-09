@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit</title>
+    <style>
+        img {
+            width: 200px;
+            height: 300px;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Object Fit</h1>
+    <p>Determina como será ajustado a imagem ou video, preservando a proporção ou distorcer para ocupar o espaço.</p>
+    <h2>Propriedade <code>object-fit: fill</code> (padrão)</h2>
+    <p>A imagem será distorcida.</p>
+    
+    <img style="object-fit: fill;" src="./cup-of-coffee.jpg" alt="Mesa de trabalho com um notebook e um xícara de café.">
+    
+
+    <h2>Propriedade <code>object-fit: contain</code></h2>
+    <p>Imagem mantém a proporção, sendo diminuida para caber no espaço. Se for ampliada pode perder a qualidade.</p>
+    <img style="object-fit: contain;" src="./cup-of-coffee.jpg" alt="Mesa de trabalho com um notebook e um xícara de café.">
+
+
+    <h2>Propriedade <code>object-fit: cover</code></h2>
+    <p>Imagem será cortada para preencher o espaço.</p>
+    <img style="object-fit: cover;" src="./cup-of-coffee.jpg" alt="Mesa de trabalho com um notebook e um xícara de café.">
+
+    <h2>Propriedade <code>object-fit: none</code></h2>
+    <p>Imagem mantem o tamanho original e só exibe a área do container.</p>
+    <img style="object-fit: none;" src="./cup-of-coffee.jpg" alt="Mesa de trabalho com um notebook e um xícara de café.">
+
+    <h2>Propriedade <code>object-fit: scale-down</code></h2>
+    <p>Aplica o valor none ou contain e usa a que deixa a imagem menor.</p>
+    <img style="object-fit: scale-down;" src="./cup-of-coffee.jpg" alt="Mesa de trabalho com um notebook e um xícara de café.">
+    
+</body>
+</html>

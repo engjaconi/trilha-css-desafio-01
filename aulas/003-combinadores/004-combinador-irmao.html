@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Irmão</title>
+    <style>
+        p + div {
+            background-color: lightgreen;
+        }
+
+        h2 ~ section {
+            background-color: lightsalmon;
+        }
+
+        code {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinador Irmão</h1>
+    <h2>Irmão Adjacente (+)</h2>
+    <p>Somente o primeiro irmão é selecionado. <code>p + div</code></p>
+    <div>
+        <p>DIV 1 - irmão 1 do P</p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit id recusandae modi necessitatibus sit vero veniam, magnam nesciunt similique accusantium maxime ducimus vitae maiores, a assumenda error obcaecati. Inventore, illum?
+    </div>
+    <div>
+        <p>DIV 2 - irmão 2 do P</p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae at tempora voluptas facere! Corrupti culpa eveniet maiores similique voluptatum iusto provident, in quae rem, iste sint possimus deleniti quos necessitatibus.
+    </div>
+    <h2>Irmão em Geral (~)</h2>
+    <p>Todos os irmão são selecionados. <code>h2 ~ section</code></p>
+    <section>
+        <h3>Section 1 - irmão 1 de H2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis eligendi consequatur officiis quasi, dolor tempora ut laborum dignissimos sunt adipisci vitae ullam inventore dolore molestias enim recusandae? Aspernatur, ex sapiente.</p>
+    </section>
+    <section>
+        <h3>Section 2 - irmão 2 de H2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nesciunt animi nihil id quos recusandae, officiis dolorum voluptatibus iusto explicabo, qui alias? Sed voluptate, sit itaque facere labore enim consectetur.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Attachment</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            overflow: scroll;
+            background-image: url('/aulas/006-imagens/cup-of-coffee.jpg');
+            background-size: cover;
+            padding: 10px;
+        }
+
+        h2 {
+            background-color: lightseagreen;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        p {
+            color: white;
+            font-size: 1.2rem;
+            background-color: rgba(0, 0, 0, 0.429);
+        }
+
+        #fixed {
+            background-attachment: fixed;
+        }
+
+        #scroll {
+            background-attachment: scroll;
+        }
+
+        #local {
+            background-attachment: local;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Attachment</h1>
+    <h2><code>background-attachment: fixed</code></h2>
+    <p>Ao rolar a página a imagem move, em relação ao conteúdo fica fixo.</p>
+    <div id="fixed">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+    </div>
+
+    <h2><code>background-attachment: scroll</code></h2>
+    <p>Ao rolar a página a imagem é fixa, em relação ao conteúdo é fixa.</p>
+    <div id="scroll">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+    </div>
+
+    <h2><code>background-attachment: local</code></h2>
+    <p>Em relação a página é fixo. Fundo move junto com o conteúdo.</p>
+    <div id="local">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt accusamus maxime reprehenderit praesentium non porro dolorum reiciendis similique possimus. Ut suscipit tempore quod possimus cumque quas, amet id enim!</p>
+    </div>
+</body>
+</html>

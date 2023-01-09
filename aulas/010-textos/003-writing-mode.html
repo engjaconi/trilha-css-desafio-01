@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Mode</title>
+    <style>
+        p {
+            width: 200px;
+            height: 300px;
+            background-color: lightcyan;
+            border: 1px solid blueviolet;
+        }
+        #p1 {
+            writing-mode: horizontal-tb;
+        }
+        #p2 {
+            writing-mode: vertical-lr;
+        }
+        #p3 {
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+<body>
+    <h1>Writing Mode</h1>
+
+    <h2>Propriedade <code>writing-mode: horizontal-tb</code></h2>
+    <p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam aliquid iste id laudantium? Sit officia excepturi quasi laboriosam nostrum saepe veniam recusandae doloribus cumque, nisi, dolor quod officiis culpa voluptatem?</p>
+
+    <h2>Propriedade <code>vertical-lr</code></h2>
+    <p id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam aliquid iste id laudantium? Sit officia excepturi quasi laboriosam nostrum saepe veniam recusandae doloribus cumque, nisi, dolor quod officiis culpa voluptatem?</p>
+
+    <h2>Propriedade <code>vertical-rl</code></h2>
+    <p id="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam aliquid iste id laudantium? Sit officia excepturi quasi laboriosam nostrum saepe veniam recusandae doloribus cumque, nisi, dolor quod officiis culpa voluptatem?</p>
+</body>
+</html>

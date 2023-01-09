@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altura e Largura</title>
+    <style>
+        div#auto {
+            width: auto;
+            height: auto;
+            background-color: lightblue;
+        }
+
+        div#pai {
+            width: 300px;
+            height: 300px;
+        }
+
+        div#inherit {
+            width: inherit;
+            height: inherit;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>width e height</h1>
+    <h2>Auto e Initial</h2>
+    <p>Aumenta o quanto for necessário para comportar o conteúdo.</p>
+    <div id="auto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore obcaecati illo facilis sunt, amet explicabo suscipit molestias cumque neque doloremque error earum odit repellendus dolorum tempora? Reiciendis beatae suscipit rem. Lo</p>
+    </div>
+
+    <h2>Inherit</h2>
+    <p>Segue o tamanho do elemento pai.</p>
+    <div id="pai">
+        <div id="inherit"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore obcaecati illo facilis sunt, amet explicabo suscipit molestias cumque neque doloremque error earum odit repellendus dolorum tempora? Reiciendis beatae suscipit rem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, tempora. Fugit ab pariatur quibusdam amet exercitationem tempora repudiandae veniam adipisci, consectetur, facilis facere, ea quis! Hic, ipsum nihil! Repudiandae, quia!</p></div>
+    </div>
+    <h2>Max e Min</h2>
+    <p>Define o maximo e minimo valor que a altura ou a largura podem assumir.</p>
+</body>
+</html>

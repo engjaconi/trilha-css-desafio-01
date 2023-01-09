@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #div1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            padding: 20px;
+        }
+        #div2 {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            
+            color: white;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>box-sizing: border-box</h1>
+    <p>Faz com que a largura e altura considere o tamanho da borda e padding para o valor final, sem afetar a dimensão definida.</p>
+    <div id="div1">DIV1 - Padding de 20px em todos os lados.</div>
+    <div id="div2">DIV2 - Padding de 50px.</div>
+</body>
+</html>

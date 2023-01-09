@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        li {
+            background-color: lightblue;
+        }
+
+        #seletorId {
+            background-color: lightcoral;
+        }
+
+        .seletorClasse {
+            background-color: lightgreen;
+        }
+
+        * {
+            color: darkblue;
+        }
+
+        [name="atributo"] {
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletores no CSS</h1>
+    <ul>
+        <li>Seletor por Tipo (Tag HTML)</li>
+        <li id="seletorId">Seletor por Id (#)</li>
+        <li class="seletorClasse">Seletor por Classe (.)</li>
+        <li style="background-color: white;">Seletor Universal (*)</li>
+        <li name="atributo">Seletor de Atributo [atributo="value"]</li>
+    </ul>
+</body>
+</html>
